@@ -3,81 +3,193 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>template</title>
-    <link href="styles/css-styles/style.css" rel="stylesheet" type="text/css">
+    <title>Home | Repository Info for Template Repo</title>
+    
+    <!-- Stylesheets -->
+    <link href="https://hsbasu.github.io/styles/css-styles/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://hsbasu.github.io/styles/css-styles/dark-styles.css" rel="stylesheet" type="text/css">
+    <link href="https://hsbasu.github.io/styles/css-styles/responsive_navbar.css" rel="stylesheet" type="text/css">
+    <link href="https://hsbasu.github.io/styles/css-styles/responsive_sections.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/atom-one-light.min.css" rel="stylesheet" type="text/css">
+    <!-- <link href="https://cdn.bootcss.com/github-markdown-css/2.8.0/github-markdown.min.css" rel="stylesheet" type="text/css"> -->
+    
+    <!-- Scripts -->
+  	<script src="https://cdn.bootcss.com/marked/0.3.6/marked.min.js" charset="utf-8"></script>
+    <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js" charset="utf-8"></script>
+    <!-- <script src="https://cdn.bootcss.com/highlight.js/9.12.0/languages/javascript.min.js" charset="utf-8"></script> -->
   </head>
   
   <body>
-
+    <!-- Scripts -->
+    <script type="text/javascript" src="https://hsbasu.github.io/styles/jscripts/navbar.js"></script>
+    
     <!-- Begin Header -->
-    <header>
-      <div class="w3-center bar">
-        <a class="bar" href="https://hsbasu.github.io" target="_blank">
-	        <picture>
-	          <source srcset="styles/icons/freedom-logo.png" media="(max-width: 600px)">
-	          <source srcset="styles/icons/freedom-small-logo.png">
-	          <img src="styles/icons/freedom-small-logo.png" alt="freedom-logo">
-	        </picture>
-	      </a>
+    <header class="bar">
+      <div class="w3-left">
+        <button type="button" id="theme" onclick="themeToggle()">Dark theme: Off</button>
+      </div>
+      <div class="w3-right">
+        <h4 id="datetime"></h4>
+      </div></br></br>
+      <div class="bar">
+        <a href="https://hsbasu.github.io" target="_blank">
+          <picture>
+            <source srcset="https://hsbasu.github.io/styles/icons/freedom-logo.png" media="(max-width: 600px)">
+            <source srcset="https://hsbasu.github.io/styles/icons/freedom-small-logo.png">
+            <img src="https://hsbasu.github.io/styles/icons/freedom-small-logo.png" alt="freedom-logo">
+          </picture>
+        </a>
       </div>
     </header>
     <!-- End Header -->
-
+    
     <!-- Begin Navigation -->
-    <nav class="stickey bar">
-      <div class="bar">
-				<h1 class="w3-center">
-          <a class="bar-item" href="index.html">Home</a>
-          <a class="bar-item" href="research.html">Research</a>
-          <a class="bar-item" href="publications.html">Publications</a>
-          <a class="bar-item" href="hobby.html">Fun Projects</a>
-          <a class="bar-item" href="aboutme.html">About Me</a>
-			  </h1>
+    <nav class="stickey">
+      <div class="topnav bar" id="myTopnav">
+        <h1 class="w3-center">
+          <a class="bar-item" href="https://hsbasu.github.io/index.html">Home</a>
+          <a class="bar-item" href="https://hsbasu.github.io/research.html">Research</a>
+          <a class="bar-item" href="https://hsbasu.github.io/publications.html">Publications</a>
+          <div class="bar-item">
+            <a class="dropdown-item" href="https://hsbasu.github.io/hobby.html">Fun Projects</a>
+            <div class="dropdown">
+              <a class="dropbtn">
+                <i class="fa fa-caret-down"></i>
+              </a>
+              <div class="dropdown-content">
+                <a href="https://hsbasu.github.io/linux/packages.html">Linux Packages</a>
+                <a href="https://hsbasu.github.io/linux/tutorials.html">Tutorials</a>
+              </div>
+            </div>
+          </div>
+          <a class="bar-item" href="https://hsbasu.github.io/aboutme.html">About Me</a>
+          <!-- Responsive navbar -->
+          <a href="javascript:void(0);" class="icon" onclick="topnavbar()">&#9776;</a>
+        </h1>
       </div>
     </nav>
     <!-- End Navigation -->
+    
+    <!-- Begin Content -->
+    <section>
+      <!-- Begin Articles -->
+      <div class="article-content" id="articles">
+        <template type="markdown">
+          # [Repository name](https://github.com/hsbasu/template-repo)
 
-    <section>			
-      <!-- Begin Content -->
-      <article>
-      </article>
-      <!-- End Content -->
-    </section>
-
-    <!-- Begin Footer -->
-    <footer class="bar">
-			<div class="w3-right">
-				<p class="services">
-          <a class="services" href="https://twitter.com/hsbasu">
-            <img class="services" src="styles/icons/social/twitter.png" alt="Twitter">
-          </a>
-          <a class="services" href="skype:live:hsbasu">
-            <img class="services" src="styles/icons/social/skype.png" alt="Skype">
-          </a>
-          <a class="services" href="https://www.linkedin.com/in/hsbasu" target="_blank">
-            <img class="services" src="styles/icons/social/linkedin.png" alt="LinkedIN">
-          </a>
-          <a class="services" href="https://github.com/hsbasu">
-            <img class="services" src="styles/icons/social/github.png" alt="Github">
-          </a>
-          <a class="services" href="https://www.facebook.com/bhimadri" target="_blank">
-            <img class="services" src="styles/icons/social/facebook.png" alt="Facebook">
-          </a>
-          <a class="services" href="mailto:hsb10@iitbbs.ac.in">
-            <img class="services" src="styles/icons/social/email.png" alt="Email">
-          </a>
-          <a class="services" href="https://hsbasu.github.io" target="_blank">
-            <img class="services" src="styles/icons/social/site.png" alt="Site">
-          </a>
-				</p>
+          [![License](https://img.shields.io/github/license/hsbasu/template-repo?label=License)](https://github.com/hsbasu/template-repo/blob/master/LICENSE)
+          ![GitHub repo size](https://img.shields.io/github/repo-size/hsbasu/template-repo?label=Repo%20size)
+          [![GitHub release (latest by date)](https://img.shields.io/github/v/release/hsbasu/template-repo?label=Latest%20Stable%20Release)](https://github.com/hsbasu/template-repo/releases/latest)
+          
+          [![Downloads](https://img.shields.io/github/downloads/hsbasu/template-repo/total?label=Downloads&style=flat-square)](#download-latest-version)
+          [![GitHub release (latest by date and asset)](https://img.shields.io/github/downloads/hsbasu/template-repo/1.0.2/template-repo_1.0.2_all.deb?color=blue&label=Downloads%40Latest)](https://github.com/hsbasu/template-repo/releases/download/1.0.2/template-repo_1.0.2_all.deb)
+          
+          Repository description
+          
+          ## Download Latest Version
+          
+          [Source[.zip]]()
+          
+          [Source[.tar.gz]]()
+          
+          [Download Binary[.deb]]()
+          
+          ## Features and Screenshots
+          Coming soon or create a Pull Request.
+          
+          ## Contents
+          - [Download Latest Version](#download-latest-version)
+          - [Features and Screenshots](#features-and-screenshots)
+          - [Dependencies](#dependencies)
+            - [Debian/Ubuntu based systems](#debianubuntu-based-distro)
+            - [Other Linux-based systems](#other-linux-based-distro)
+          - [Installation](#build-and-install-the-latest-version)
+            - [Debian/Ubuntu based systems](#debianubuntu-based-systems)
+            - [Other Linux-based systems](#other-linux-based-systems)
+            - [For Developers](#for-developers)
+          - [User Manual](#user-manual)
+          - [Issue Tracking and Contributing](#issue-tracking-and-contributing)
+          - [Contributors](#contributors)
+          
+          ## Dependencies
+          Coming soon or create a Pull Request.
+          ### Debian/Ubuntu based distro
+          Coming soon or create a Pull Request.
+          ### Other Linux-based distro
+          Coming soon or create a Pull Request.
+          
+          ## Build and Install the Latest Version
+          Coming soon or create a Pull Request.
+          ### Debian/Ubuntu based systems
+          Coming soon or create a Pull Request.
+          ### Other Linux-based systems
+          Coming soon or create a Pull Request.
+          ### For Developers
+          Coming soon or create a Pull Request.
+          
+          ## User Manual
+          Coming soon or create a Pull Request.
+          
+          ## Issue Tracking and Contributing
+          Coming soon or create a Pull Request.
+          
+          ## Contributors
+          
+          ### [Himadri Sekhar Basu](https://hsbasu.github.io)
+          Current Maintainer.
+          
+          ## Donations
+          If you like this app and would like to buy me a &#x2615;, you can do so via:
+          
+          <a href="https://liberapay.com/hsbasu/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
+          
+          <a href="https://paypal.me/hsbasu"><img alt="Donate using PayPal" src="https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.svg"></a>
+        </template>
       </div>
+      <!-- End Articles -->
+    </section>
+    <!-- End Content -->
+    
+    <!-- Begin Footer -->
+    <footer class="w3-center bar">
       <div class="w3-left">
         <p class="crights">
 					&copy;2021 Himadri Sekhar Basu
 				</p>
 			</div>
+			<div class="w3-right">
+				<p class="services">
+          <a class="services" href="https://twitter.com/hsbasu" target="_blank">
+            <img class="services" src="https://hsbasu.github.io/styles/icons/social/twitter.png" alt="Twitter">
+          </a>
+          <a class="services" href="skype:live:hsbasu">
+            <img class="services" src="https://hsbasu.github.io/styles/icons/social/skype.png" alt="Skype">
+          </a>
+          <a class="services" href="https://www.linkedin.com/in/hsbasu" target="_blank">
+            <img class="services" src="https://hsbasu.github.io/styles/icons/social/linkedin.png" alt="LinkedIN">
+          </a>
+          <a class="services" href="https://github.com/hsbasu" target="_blank">
+            <img class="services" src="https://hsbasu.github.io/styles/icons/social/github.png" alt="Github">
+          </a>
+          <a class="services" href="https://www.facebook.com/bhimadri" target="_blank">
+            <img class="services" src="https://hsbasu.github.io/styles/icons/social/facebook.png" alt="Facebook">
+          </a>
+          <a class="services" href="mailto:hsb10@iitbbs.ac.in">
+            <img class="services" src="https://hsbasu.github.io/styles/icons/social/email.png" alt="Email">
+          </a>
+          <a class="services" href="https://hsbasu.github.io" target="_blank">
+            <img class="services" src="https://hsbasu.github.io/styles/icons/social/site.png" alt="Site">
+          </a>
+				</p>
+      </div>
+      <div class="w3-center">
+        <p class="crights" id="result"></p>
+        <script src="https://hsbasu.github.io/styles/jscripts/visits.js"></script>
+      </div>
     </footer>
     <!-- End Footer -->
+    <script type="text/javascript" src="https://hsbasu.github.io/styles/jscripts/md_html.min.js">"render any markdown before applying themes"</script>
+    <script type="text/javascript" src="https://hsbasu.github.io/styles/jscripts/main.js"></script>
   </body>
 </html>
-
