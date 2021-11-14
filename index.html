@@ -32,8 +32,8 @@
       <div class="w3-right">
         <h4 id="datetime"></h4>
       </div></br></br>
-      <div class="bar">
-        <a href="https://hsbasu.github.io" target="_blank">
+      <div class="center">
+        <a href="https://hsbasu.github.io">
           <picture>
             <source srcset="https://hsbasu.github.io/styles/icons/freedom-logo.png" media="(max-width: 600px)">
             <source srcset="https://hsbasu.github.io/styles/icons/freedom-small-logo.png">
@@ -45,9 +45,14 @@
     <!-- End Header -->
     
     <!-- Begin Navigation -->
-    <nav class="stickey">
-      <div class="topnav bar" id="myTopnav">
+    <nav class="stickey bar">
+      <div class="topnav" id="myTopnav">
         <h1 class="w3-center">
+          <!-- Responsive navbar -->
+          <a class="icon" href="javascript:void(0);" onclick="topnavbar()">
+            <i class="fa fa-bars"></i> Menu
+          </a>
+          <!-- Regular navbar -->
           <a class="bar-item" href="https://hsbasu.github.io/index.html">Home</a>
           <a class="bar-item" href="https://hsbasu.github.io/research.html">Research</a>
           <a class="bar-item" href="https://hsbasu.github.io/publications.html">Publications</a>
@@ -64,8 +69,6 @@
             </div>
           </div>
           <a class="bar-item" href="https://hsbasu.github.io/aboutme.html">About Me</a>
-          <!-- Responsive navbar -->
-          <a href="javascript:void(0);" class="icon" onclick="topnavbar()">&#9776;</a>
         </h1>
       </div>
     </nav>
@@ -76,75 +79,108 @@
       <!-- Begin Articles -->
       <div class="article-content" id="articles">
         <template type="markdown">
-          # [Repository name](https://github.com/hsbasu/template-repo)
+# [Repository name](https://github.com/hsbasu/template-repo)
 
-          [![License](https://img.shields.io/github/license/hsbasu/template-repo?label=License)](https://github.com/hsbasu/template-repo/blob/master/LICENSE)
-          ![GitHub repo size](https://img.shields.io/github/repo-size/hsbasu/template-repo?label=Repo%20size)
-          [![GitHub release (latest by date)](https://img.shields.io/github/v/release/hsbasu/template-repo?label=Latest%20Stable%20Release)](https://github.com/hsbasu/template-repo/releases/latest)
-          
-          [![Downloads](https://img.shields.io/github/downloads/hsbasu/template-repo/total?label=Downloads&style=flat-square)](#download-latest-version)
-          [![GitHub release (latest by date and asset)](https://img.shields.io/github/downloads/hsbasu/template-repo/1.0.2/template-repo_1.0.2_all.deb?color=blue&label=Downloads%40Latest)](https://github.com/hsbasu/template-repo/releases/download/1.0.2/template-repo_1.0.2_all.deb)
-          
-          Repository description
-          
-          ## Download Latest Version
-          
-          [Source[.zip]]()
-          
-          [Source[.tar.gz]]()
-          
-          [Download Binary[.deb]]()
-          
-          ## Features and Screenshots
-          Coming soon or create a Pull Request.
-          
-          ## Contents
-          - [Download Latest Version](#download-latest-version)
-          - [Features and Screenshots](#features-and-screenshots)
-          - [Dependencies](#dependencies)
-            - [Debian/Ubuntu based systems](#debianubuntu-based-distro)
-            - [Other Linux-based systems](#other-linux-based-distro)
-          - [Installation](#build-and-install-the-latest-version)
-            - [Debian/Ubuntu based systems](#debianubuntu-based-systems)
-            - [Other Linux-based systems](#other-linux-based-systems)
-            - [For Developers](#for-developers)
-          - [User Manual](#user-manual)
-          - [Issue Tracking and Contributing](#issue-tracking-and-contributing)
-          - [Contributors](#contributors)
-          
-          ## Dependencies
-          Coming soon or create a Pull Request.
-          ### Debian/Ubuntu based distro
-          Coming soon or create a Pull Request.
-          ### Other Linux-based distro
-          Coming soon or create a Pull Request.
-          
-          ## Build and Install the Latest Version
-          Coming soon or create a Pull Request.
-          ### Debian/Ubuntu based systems
-          Coming soon or create a Pull Request.
-          ### Other Linux-based systems
-          Coming soon or create a Pull Request.
-          ### For Developers
-          Coming soon or create a Pull Request.
-          
-          ## User Manual
-          Coming soon or create a Pull Request.
-          
-          ## Issue Tracking and Contributing
-          Coming soon or create a Pull Request.
-          
-          ## Contributors
-          
-          ### [Himadri Sekhar Basu](https://hsbasu.github.io)
-          Current Maintainer.
-          
-          ## Donations
-          If you like this app and would like to buy me a &#x2615;, you can do so via:
-          
-          <a href="https://liberapay.com/hsbasu/donate"><img alt="Donate using Liberapay" src="https://liberapay.com/assets/widgets/donate.svg"></a>
-          
-          <a href="https://paypal.me/hsbasu"><img alt="Donate using PayPal" src="https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.svg"></a>
+<p class="badges">
+  <img src="#?sanitize=true" height="64" alt="Logo"></br>
+  
+  <a class="badges" href="https://github.com/hsbasu/template-repo/blob/master/LICENSE">
+    <img src="https://img.shields.io/github/license/hsbasu/template-repo?label=License" alt="License">
+  </a>
+  <a class="badges" href="#">
+    <img src="https://img.shields.io/github/repo-size/hsbasu/template-repo?label=Repo%20size" alt="GitHub repo size">
+  </a>
+  <a class="badges" href="https://github.com/hsbasu/template-repo/releases/latest">
+    <img src="https://img.shields.io/github/v/release/hsbasu/template-repo?label=Latest%20Stable%20Release" alt="GitHub release (latest by date)">
+  </a>
+  <a class="badges" href="https://github.com/hsbasu/template-repo/issues" target="_blank">
+    <img src="https://img.shields.io/github/issues/hsbasu/template-repo?label=Issues" alt="Open Issues">
+  </a>
+  <a class="badges" href="https://github.com/hsbasu/template-repo/pulls" target="_blank">
+    <img src="https://img.shields.io/github/issues-pr/hsbasu/template-repo?label=PR" alt="Open PRs">
+  </a>
+  <a class="badges" href="#download-latest-version">
+    <img src="https://img.shields.io/github/downloads/hsbasu/template-repo/total?label=Downloads" alt="Downloads">
+  </a>
+  <a class="badges" href="#">
+    <img src="https://img.shields.io/badge/Example%20Badge-example%20text-blue?label=Downloads%40Latest%20Binary" alt="GitHub release (latest by date and asset)">
+  </a>
+  <a class="badges" href="#">
+    <img src="https://img.shields.io/badge/Example%20Badge-example%20text-blue" alt="Example badge alt text">
+  </a>
+</p>
+
+Repository description
+
+## Download Latest Version
+
+<p class="badges">
+  <a class="buttn" href="https://github.com/hsbasu/template-repo" target="_blank"><i class="fa fa-github"></i> View On GitHub</a>
+  <a class="buttn" href="https://github.com/hsbasu/template-repo/zipball/master"><i class="fa fa-file-zip-o"></i> Download .zip</a>
+  <a class="buttn" href="https://github.com/hsbasu/template-repo/tarball/master"><i class="fa fa-file-zip-o"></i> Download .tar.gz</a>
+</p>
+
+## Features and Screenshots
+Coming soon or create a Pull Request.
+
+### Sample Screenshot
+<p class="badges">
+  <img src="https://github.com/hsbasu/template-repo/raw/gh-pages/screenshots/sample-screenshot.png" alt="Sample Screenshot">
+</p>
+
+## Contents
+- [Download Latest Version](#download-latest-version)
+- [Features and Screenshots](#features-and-screenshots)
+- [Dependencies](#dependencies)
+  - [Debian/Ubuntu based systems](#debianubuntu-based-distro)
+  - [Other Linux-based systems](#other-linux-based-distro)
+- [Installation](#build-and-install-the-latest-version)
+  - [Debian/Ubuntu based systems](#debianubuntu-based-systems)
+  - [Other Linux-based systems](#other-linux-based-systems)
+  - [For Developers](#for-developers)
+- [User Manual](#user-manual)
+- [Issue Tracking and Contributing](#issue-tracking-and-contributing)
+- [Contributors](#contributors)
+
+## Dependencies
+Coming soon or create a Pull Request.
+### Debian/Ubuntu based distro
+Coming soon or create a Pull Request.
+### Other Linux-based distro
+Coming soon or create a Pull Request.
+
+## Build and Install the Latest Version
+Coming soon or create a Pull Request.
+### Debian/Ubuntu based systems
+Coming soon or create a Pull Request.
+### Other Linux-based systems
+Coming soon or create a Pull Request.
+### For Developers
+Coming soon or create a Pull Request.
+
+## User Manual
+Coming soon or create a Pull Request.
+
+## Issue Tracking and Contributing
+Coming soon or create a Pull Request.
+
+## Contributors
+
+### [Himadri Sekhar Basu](https://hsbasu.github.io)
+Current Maintainer.
+
+## Donations
+I am a freelance programmer. So, If you like this app and would like to offer me a coffee ( &#9749; ) to motivate me further, you can do so via:
+
+<a class="badges" href="https://liberapay.com/hsbasu/donate" target="_blank">
+  <img src="https://liberapay.com/assets/widgets/donate.svg" alt="Donate using Liberapay">
+</a>
+<a class="badges" href="https://paypal.me/hsbasu" target="_blank">
+  <img src="https://www.paypalobjects.com/webstatic/i/logo/rebrand/ppcom.svg" alt="Donate using PayPal">
+</a>
+<a class="badges" href="https://hsbasu.github.io/images/upi-qr.jpg" target="_blank">
+  <img src ="https://hsbasu.github.io/styles/icons/logo/svg/upi-logo.svg" alt="Paytm UPI">
+</a>
         </template>
       </div>
       <!-- End Articles -->
@@ -183,10 +219,14 @@
           </a>
 				</p>
       </div>
-      <div class="w3-center">
-        <p class="crights" id="result"></p>
-        <script src="https://hsbasu.github.io/styles/jscripts/visits.js"></script>
-      </div>
+      <p class="services">
+        <!-- <a class="badges" href="https://visitorbadge.io/status?path=hsbasu.github.io/template-repo">
+          <img class="services" src="https://api.visitorbadge.io/api/visitors?path=hsbasu.github.io/template-repo&label=Visits(Total)&labelColor=%23dce775&countColor=%23263759&style=flat" alt="Visits(Total)">
+        </a>
+        <a class="badges" href="https://visitorbadge.io/status?path=hsbasu.github.io/template-repo">
+          <img class="services" src="https://api.visitorbadge.io/api/daily?path=hsbasu.github.io/template-repo&label=Visits(Today)&labelColor=%2337d67a&countColor=%23263759&style=flat"  alt="Visits(Today)">
+        </a> -->
+      </p>
     </footer>
     <!-- End Footer -->
     <script type="text/javascript" src="https://hsbasu.github.io/styles/jscripts/md_html.min.js">"render any markdown before applying themes"</script>
